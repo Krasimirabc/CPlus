@@ -1,0 +1,38 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+
+	int my = 23;
+	int myFavNums[5];
+
+	int badNums[5] = { 4, 13, 14, 24, 34 };
+
+	std::cout << "Bad Number 1: " << badNums[0] << std::endl;
+
+	char myName[5][5] = { { 'D', 'e', 'r', 'e', 'k' },
+	{ 'B', 'a', 'n', 'a', 's' } };
+
+	cout << "2nd letter in 2nd array is:\n" << myName[1][1] << endl;
+	myName[0][2] = 'e';
+	cout << "New Value " << myName[0][2] << endl;
+	for (int i = 1; i <= 10; i++) {
+		cout << i << endl;
+	}
+
+	for (int j = 0; j < 5; j++) {
+		for (int k = 0; k < 5; k++) {
+			cout << myName[j][k];
+		}
+		cout << endl;
+	}
+
+
+
+	printf("Preceding with blanks: %d \n", my);
+}
